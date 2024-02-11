@@ -1,0 +1,131 @@
+/* CONTAINER 4 */
+.container-4{
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+.container-4 .infos-left {
+    width: 40vw;
+    height: 100%;
+}
+.container-4 .infos-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-4 .infos-right {
+    width: 60vw;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-4 .infos-right h2{
+  padding-left: 30px;
+  padding-bottom: 10px;
+  color: #000000;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: bold;
+  font-size: 36px; 
+}
+.container-4 .infos-right p{
+  padding: 30px;
+  font-weight: 400;
+  width: 90%;
+  color: #333;
+  text-align: justify;
+  font-family: 'Acumin Pro', sans-serif;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+.container-4 .infos-right button {
+    padding: 10px 20px;
+    margin-left: 30px;
+    width: 15%;
+    font-size: 1em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F2A85;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #2F2A85;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+  .container-4 .infos-right button:hover{
+    background-color: #EBEBEB;
+    color: #2F2A85;
+    border: 2px solid #2F2A85;
+    transform: scale(1.05);
+  }
+
+  .rectangle {
+    width: 325px;
+    height: 12px;
+    background-color: #2F2A85;
+    margin-left: 105px;
+    margin-bottom: 20px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .container-4 {
+      flex-direction: column; 
+      height: auto;
+    }
+  
+    .container-4 .infos-left,
+    .container-4 .infos-right {
+      width: 100%; 
+    }
+  
+    .container-4 .infos-right button {
+      width: 80%; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .container-4 {
+        flex-direction: column;
+        height: auto;
+        width: 95vw;
+    }
+
+    .container-4 .infos-left,
+    .container-4 .infos-right {
+        width: 100%;
+        padding: 10px; 
+    }
+
+    .container-4 .infos-right h2 {
+        font-size: 24px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container-4 .infos-right p {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .container-4 .infos-right button {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .rectangle {
+        width: 100%;
+        margin-left: 0;
+    }
+}
